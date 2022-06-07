@@ -1,8 +1,6 @@
 #hero-background {
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  /* position: absolute; */
   height: 650px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(images/heroBsolar.jpeg);
@@ -18,7 +16,6 @@
 }
 
 .navbar {
-  z-index: 2;
   border: 0;
   --bs-offcanvas-color: white;
 }

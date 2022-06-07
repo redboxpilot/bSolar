@@ -132,13 +132,14 @@
 }
 
 #faqs {
-  margin: 40px 0px 40px 0px;
+  padding: 70px 0px 70px 0px;
 }
 #faqs-header {
   text-align: center;
 }
 
 #faqs-header h2 {
+  padding: 0px 0px 10px 0px;
   font-size: 35px;
   color: #ecb340;
 }

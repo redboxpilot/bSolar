@@ -1,4 +1,8 @@
 #hero-background {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 650px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
     url(images/heroBsolar.jpeg);
@@ -13,6 +17,13 @@
   color: #fff;
 }
 
+.navbar {
+  z-index: 2;
+  border: 0;
+  --bs-offcanvas-color: white;
+  --bs-navbar-toggler-icon-bg: url(/Users/rod/Documents/Bunko/Customers/B Solar/BSolarNew/icons/Icono 1-04.svg);
+}
+
 .button {
   padding: 10px 85px;
   border: none;
@@ -21,11 +32,10 @@
   background: linear-gradient(to right, #d76031 0%, #ecb340 100%);
 }
 
-.nav-link {
+.nav-pills .nav-link {
   --bs-nav-link-color: #8a8a8a !important;
   --bs-nav-link-hover-color: #ecb340;
-  border-width: 2px;
-  --bs-nav-pills-border-width: 20px;
+  --bs-nav-link-border-color: red;
   text-align: left;
 }
 

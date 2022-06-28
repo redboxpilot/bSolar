@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 #hero-background {
   width: 100%;
   /* position: absolute; */
@@ -21,11 +25,19 @@
 }
 
 .button {
+  margin-top: 20px;
   padding: 10px 85px;
   border: none;
   color: #fff;
   border-radius: 50px;
   background: linear-gradient(to right, #d76031 0%, #ecb340 100%);
+}
+
+.button:hover {
+  background: linear-gradient(to right, #fff 0%, #fff 0%);
+  color: #d76031;
+  transition: 0.7s ease;
+  border: 2px solid #d76031;
 }
 
 .nav-pills .nav-link {
@@ -44,7 +56,7 @@
 #benefits {
   padding: 5em 0em 5em 0em;
   text-align: left;
-  height: 600px;
+  height: min-content;
   min-height: fit-content;
   align-content: center;
   justify-content: center;
@@ -65,9 +77,15 @@
 }
 
 #v-pills-home,
+#v-pills-payment,
 #v-pills-profile,
+#v-pills-bill,
 #v-pills-messages,
-#v-pills-settings {
+#v-pills-settings,
+#v-pills-impact {
+  text-align: justify;
+  vertical-align: middle;
+  align-items: center;
   padding-left: 60px;
 }
 
@@ -94,12 +112,12 @@
 }
 #certified {
   display: flex;
-  padding: 3em 0em;
+  padding: 6em 0em;
   background-image: url(images/certifiedTesla.jpeg);
   background-position: center;
   background-size: cover;
   color: #fff;
-  height: 600px;
+  height: min-content;
   min-height: fit-content;
   align-items: center;
 }
@@ -126,6 +144,12 @@
   font-size: 15px;
   font-weight: 700;
   color: white;
+}
+
+#certified-button:hover {
+  background-color: #fff;
+  color: #f7ce4d;
+  transition: 0.5s ease;
 }
 
 #faqs {
@@ -182,9 +206,21 @@
   background-color: #ecb340;
   border: none;
   border-radius: 50px;
+  border-color: #fff;
+  border: solid;
+  border-width: 2px;
   font-size: 15px;
   font-weight: 700;
   color: white;
+}
+
+#contact-me:hover {
+  background-color: #fff;
+  color: #f7ce4d;
+  transition: 0.5s ease;
+  border: solid;
+  border-width: 2px;
+  border-color: #f7ce4d;
 }
 
 .form-floating {

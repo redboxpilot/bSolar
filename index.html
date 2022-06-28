@@ -14,12 +14,13 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/my.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
   <body>
     <nav class="navbar fixed-top">
       <div class="container-fluid">
         <a href="#hero-background"
-          ><img src="icons/Logo blanco-02.svg" alt="" width="40%"
+          ><img src="icons/Logo blanco-02.svg" alt="" width="60%"
         /></a>
 
         <button
@@ -86,7 +87,7 @@
       <div class="container col-md-10">
         <h2>Choosing solar <span>makes sense.</span></h2>
       </div>
-      <div class="container col-md-10 col-sm-12">
+      <div class="container col-md-10 col-sm-12" id="#benefits-all">
         <div class="row">
           <div class="col-md-10">
             <div class="d-flex align-items-start">
@@ -107,7 +108,20 @@
                   aria-selected="true"
                 >
                   <img src="icons/Icono 1-04.svg" alt="" width="15%" />
-                  26% federal tax incentive
+                  26% federal tax credit
+                </button>
+                <button
+                  class="nav-link"
+                  id="v-pills-payment-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-payment"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-payment"
+                  aria-selected="false"
+                >
+                  <img src="icons/Icono 1-04.svg" alt="" width="15%" />
+                  $0 down payment
                 </button>
                 <button
                   class="nav-link"
@@ -120,7 +134,20 @@
                   aria-selected="false"
                 >
                   <img src="icons/Icono 2-05.svg" alt="" width="15%" />
-                  Increase the propertie's appretiation
+                  Increase your property value
+                </button>
+                <button
+                  class="nav-link"
+                  id="v-pills-bill-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-bill"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-bill"
+                  aria-selected="false"
+                >
+                  <img src="icons/Icono 1-04.svg" alt="" width="15%" />
+                  Save more on your utility bill
                 </button>
                 <button
                   class="nav-link"
@@ -133,7 +160,7 @@
                   aria-selected="false"
                 >
                   <img src="icons/Icono 3-06.svg" alt="" width="15%" />
-                  20-year labour warranty
+                  20-year labor warranty
                 </button>
                 <button
                   class="nav-link"
@@ -148,6 +175,19 @@
                   <img src="icons/Icono 4-07.svg" alt="" width="15%" />
                   25-year product warranty
                 </button>
+                <button
+                  class="nav-link"
+                  id="v-pills-impact-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-impact"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-impact"
+                  aria-selected="false"
+                >
+                  <img src="icons/Icono 4-07.svg" alt="" width="15%" />
+                  Reduce Environmental Impact
+                </button>
               </div>
               <div class="container col-md-9 col-sm-12">
                 <div class="tab-content" id="v-pills-tabContent">
@@ -159,12 +199,32 @@
                     tabindex="0"
                   >
                     <img src="icons/Icono 1-04.svg" alt="" width="15%" />
-                    <h4>26% federal tax incentive</h4>
+                    <h4>26% federal tax credit</h4>
                     <p>
-                      The federal tax credit for a residential solar system is
-                      26% of the system's contract price for 2020. When you
-                      receive your tax credit, lenders generally hope that you
-                      put it toward the principal of your loan.
+                      Solar panels save homeowners a lot of money. When you
+                      install solar panels at home, you receive a 26% federal
+                      tax credit. We design solar panels systems that are in
+                      compliance with all federal reporting regulations in order
+                      to take full advantage of this tax program.
+                    </p>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="v-pills-payment"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-payment-tab"
+                    tabindex="0"
+                  >
+                    <img src="icons/Icono 1-04.svg" alt="" width="15%" />
+                    <h4>$0 down payment</h4>
+                    <p>
+                      When you finance your solar panels, you might be eligible
+                      for a $0 down payment but will still have a monthly
+                      payment. The savings over your panels useful life are less
+                      than a direct purchase, but also significant in their own
+                      right. The best part? Your payments will end eventually,
+                      and your electric bill will be extremely reduced or
+                      eliminated.
                     </p>
                   </div>
                   <div
@@ -176,12 +236,31 @@
                   >
                     <img src="icons/Icono 2-05.svg" alt="" width="15%" />
 
-                    <h4>26% federal tax incentive</h4>
+                    <h4>Increase your property value</h4>
                     <p>
-                      The federal tax credit for a residential solar system is
-                      26% of the system's contract price for 2020. When you
-                      receive your tax credit, lenders generally hope that you
-                      put it toward the principal of your loan.
+                      Homes with solar power are sold faster and for higher
+                      prices, as they save money on bills and reduce
+                      environmental pollution.
+                    </p>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="v-pills-bill"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-bill-tab"
+                    tabindex="0"
+                  >
+                    <img src="icons/Icono 3-06.svg" alt="" width="15%" />
+                    <h4>Save more on your utility bill</h4>
+                    <p>
+                      Solar power offers protection from high energy rates and
+                      steadily rising electricity costs. Adding solar panels to
+                      your home is a long-term, low risk, high return way to
+                      invest your money. You get an initial tax-free annual
+                      return on investment from 30% to 40%. As utility rates
+                      increase, the annual return increases. Solar energy will
+                      also free you from the utility company's dependence on the
+                      fossil fuel marketplace.
                     </p>
                   </div>
                   <div
@@ -192,12 +271,10 @@
                     tabindex="0"
                   >
                     <img src="icons/Icono 3-06.svg" alt="" width="15%" />
-                    <h4>26% federal tax incentive</h4>
+                    <h4>20 year labor warranty</h4>
                     <p>
-                      The federal tax credit for a residential solar system is
-                      26% of the system's contract price for 2020. When you
-                      receive your tax credit, lenders generally hope that you
-                      put it toward the principal of your loan.
+                      We stand behind our work. We are here to assure you that
+                      the solar panels you purchase will operate without issues.
                     </p>
                   </div>
                   <div
@@ -208,12 +285,28 @@
                     tabindex="0"
                   >
                     <img src="icons/Icono 4-07.svg" alt="" width="15%" />
-                    <h4>26% federal tax incentive</h4>
+                    <h4>25 year product warranty</h4>
                     <p>
-                      The federal tax credit for a residential solar system is
-                      26% of the system's contract price for 2020. When you
-                      receive your tax credit, lenders generally hope that you
-                      put it toward the principal of your loan.
+                      Your investment is protected by our product's multiple
+                      warranties.
+                    </p>
+                  </div>
+                  <div
+                    class="tab-pane fade"
+                    id="v-pills-impact"
+                    role="tabpanel"
+                    aria-labelledby="v-pills-impact-tab"
+                    tabindex="0"
+                  >
+                    <img src="icons/Icono 4-07.svg" alt="" width="15%" />
+                    <h4>Reduce Environmental Impact</h4>
+                    <p>
+                      No matter how small your solar panel system is, it has a
+                      significant environmental impact. When you get solar
+                      panels at home and generate electricity from clean, you
+                      are reducing fossil fuel consumption and the emission of
+                      harmful pollutants. ¡Let's leave future generations a
+                      planet cleaner than ours!
                     </p>
                   </div>
                 </div>
@@ -232,47 +325,61 @@
           <div class="row row-cols-1 row-cols-md-4 g-4">
             <div class="col">
               <div class="card h-100">
-                <img src="..." class="card-img-top" alt="..." />
+                <img
+                  src="images/residential.png"
+                  class="card-img-top"
+                  alt="..."
+                />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">RESIDENTIAL</h5>
                   <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
+                    Start converting the sun's energy into usable electricity
+                    for your home and make a major investment towards clean
+                    energy.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="..." class="card-img-top" alt="..." />
+                <img
+                  src="images/commercial.png"
+                  class="card-img-top"
+                  alt="..."
+                />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a short card.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="..." />
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">COMMERCIAL</h5>
                   <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content.
+                    Besides great savings, investing in solar panels for your
+                    building will show your clients you're interested in
+                    producing <strong>clean energy</strong> and reducing your
+                    carbon footprint.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="..." class="card-img-top" alt="..." />
+                <img src="images/highEnd.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">HIGH END RESIDENTIAL</h5>
                   <p class="card-text">
-                    This is a longer card with supporting text below as a
-                    natural lead-in to additional content. This content is a
-                    little bit longer.
+                    Switch to solar with beautifully engineered systems. Choose
+                    solar panels that are suitable for Florida's conditions,
+                    made with the most efficient materials.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="images/custom.png" class="card-img-top" alt="..." />
+                <div class="card-body">
+                  <h5 class="card-title">CUSTOM INSTALLS</h5>
+                  <p class="card-text">
+                    The form of your solar system is as important as its
+                    function. We model out the exact size to best fit your
+                    energy needs and make a beautiful system for your property.
                   </p>
                 </div>
               </div>
@@ -306,6 +413,15 @@
                 seamlessly during a power outage.
               </p>
             </div>
+            <div class="properties">
+              <img src="icons/Icono 6-09.svg" alt="" width="10%" />
+              <h5>Monitor your usage.</h5>
+              <p>
+                Track your system energy production 24/7 and monitor its health.
+                With online monitoring, you get energy insights from your home
+                and watch how your savings increase.
+              </p>
+            </div>
             <a href="#contact-us">
               <button type="button" id="certified-button">
                 LET'S BE SOLAR
@@ -315,6 +431,8 @@
         </div>
       </div>
     </section>
+
+    <!-- FAQs -->
 
     <section id="faqs">
       <div class="container" id="faqs-header">
@@ -336,7 +454,7 @@
                 aria-expanded="true"
                 aria-controls="collapseOne"
               >
-                What are the basic parts of a solar installation?
+                <strong>1. How much energy will my system produce? </strong>
               </button>
             </h2>
             <div
@@ -346,13 +464,12 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                A photovoltaic (PV) solar system includes electrical and
-                mechanical components. The electrical components include solar
-                panels, an inverter, a net meter, and various wires, junction
-                boxes, and grounding components. The mechanical components
-                include racking to secure panels to the roof and mounting
-                hardware for the inverter. You can learn more about the
-                components of a solar array on our blog.
+                One of your goals with going solar is likely to make your home
+                net-zero. This means that during an average month, your solar
+                array will produce the same amount of energy that your home
+                consumes. Your home’s monthly energy consumption can be found on
+                the utility bill. This information is used to design a solar
+                system that meets your home’s energy needs.
               </div>
             </div>
           </div>
@@ -366,7 +483,7 @@
                 aria-expanded="false"
                 aria-controls="collapseTwo"
               >
-                Accordion Item #2
+                <strong>2. What maintenance is required?</strong>
               </button>
             </h2>
             <div
@@ -376,15 +493,20 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>This is the second item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                Understanding the maintenance that is needed with a major
+                purchase of new equipment is crucial. We all know how much
+                maintenance is involved with ownership of a vehicle, air
+                conditioning, and other significant assets. Luckily, the
+                maintenance of rooftop solar in Florida is virtually
+                nonexistent. This is in large part due to the fact that the
+                solar array is completely stationary. Nothing needs to be oiled
+                and parts do not experience significant wear. The only
+                maintenance typically required for a solar PV system is cleaning
+                the panels. We recommend cleaning solar panels once a year to
+                remove dust and pollen that has accumulated. This ensures that
+                the maximum amount of light is able to make it to the solar
+                cells. Cleaning solar panels can be done yourself or by hiring a
+                professional company.
               </div>
             </div>
           </div>
@@ -398,7 +520,10 @@
                 aria-expanded="false"
                 aria-controls="collapseThree"
               >
-                Accordion Item #3
+                <strong
+                  >3. If I get solar panels, can I go off-grid? Will I maintain
+                  power during outages?</strong
+                >
               </button>
             </h2>
             <div
@@ -408,15 +533,180 @@
               data-bs-parent="#accordionExample"
             >
               <div class="accordion-body">
-                <strong>This is the third item's accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It's also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                In Florida, you must remain connected to the utility if there is
+                one available. In most cases, this grid connection is beneficial
+                for you because it means you can receive power from the grid at
+                night or when the sun isn't shining. However, this connection
+                also means your array will be offline when the grid is down and
+                you will not maintain power unless you also have battery backup.
+                Batteries allow you to safely retain power during a power outage
+                because your excess energy from the day can be stored in the
+                batteries for discharge at night.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFour">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="false"
+                aria-controls="collapseFour"
+              >
+                <strong>4. Do I need batteries?</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseFour"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFour"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                Thanks to net metering, batteries are not required for you to
+                maintain power 24/7. However, if there is a grid outage, your
+                inverter turns off and your home will lose power just like
+                everyone else. This is called anti-islanding and it exists to
+                protect downed power lines and utility workers from power surges
+                coming from solar arrays. If you want to maintain power during a
+                grid failure, batteries are required. We install Tesla
+                Powerwalls as our battery backup solution.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingFive">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="false"
+                aria-controls="collapseFive"
+              >
+                <strong>5. How much does solar cost?</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseFive"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingFive"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                The price of solar is usually measured in dollars per watt. The
+                price depends on a variety of factors, including your roof type,
+                the size of the array, and the orientation of the panels. The
+                best way to understand the true cost of solar is by comparing it
+                to the cost of energy from the utility. With a financed solar
+                array, your monthly payment should always be equal or lower than
+                the monthly bill you were paying to the utility. With a cash
+                purchase, you should see a payback time of more or less 7 years.
+                Learn more about this cost comparison on the blog. A final cost
+                to consider is the environmental cost of solar compared to grid
+                energy. In a previous FAQ we explain that solar in Florida can
+                reduce your carbon footprint by 11,000 pounds per year, which is
+                a significant environmental cost reduction compared to energy
+                from the utility.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSix">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSix"
+                aria-expanded="false"
+                aria-controls="collapseSix"
+              >
+                <strong>6. Will I still have a power bill?</strong>
+              </button>
+            </h2>
+            <div
+              id="collapseSix"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingSix"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                If your system performs as expected, producing enough energy to
+                meet your needs, your typical utility bill will be the utility's
+                interconnection fee, which is about $9 per month.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingSeven">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseSeven"
+                aria-expanded="false"
+                aria-controls="collapseSeven"
+              >
+                <strong>
+                  7. Which are the tax benefits available to me? How do I claim
+                  them?</strong
+                >
+              </button>
+            </h2>
+            <div
+              id="collapseSeven"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingSeven"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                In Florida, the only solar tax credit available is the federal
+                investment tax credit (ITC), which is 26% in 2020. We are always
+                eager to help our clients in every way we can, and we will be
+                happy to send you the tax form 5695 to use to claim the ITC.
+                However, we are not a tax preparation company. Understanding
+                eligibility for the tax credit before going solar is ultimately
+                your responsibility. In addition, filing the tax credit is up to
+                you and can be done with the help of your tax advisor. Other tax
+                incentives in Florida are solar's exemption from sales and
+                property tax. However, these are not credits that you can
+                receive back from the state.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="headingEight">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseEight"
+                aria-expanded="false"
+                aria-controls="collapseEight"
+              >
+                <strong
+                  >8. How long is the payback time for going solar?</strong
+                >
+              </button>
+            </h2>
+            <div
+              id="collapseEight"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingEight"
+              data-bs-parent="#accordionExample"
+            >
+              <div class="accordion-body">
+                The payback time for going solar is dependent on a variety of
+                factors, including the price of your system, how it was
+                purchased, and the system's performance. We seek to design our
+                systems so a cash-purchased system will pay itself back in
+                energy savings after around 7 years. A financed system will pay
+                itself back on day one since the monthly loan payment is equal
+                to or lower than the electric bill it is replacing. Learn more
+                about payback time and other economic factors in the Complete
+                Guide to Solar Economics in Florida.
               </div>
             </div>
           </div>

@@ -24,10 +24,11 @@ a {
   text-align: center;
 }
 
-#hero-text h2 {
+#hero-text h1 {
   padding: 275px 0px 10px 0px;
-  font-size: 45px;
+  font-size: 50px;
   color: #fff;
+  font-weight: 600;
 }
 
 .navbar {
@@ -37,12 +38,12 @@ a {
 
 #navbar-logo {
   transform: scale(1) perspective(1px);
-  transition: 0.9s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 #navbar-logo:hover {
   transform: scale(1.1) perspective(1px);
-  transition: 0.9s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 .button {
@@ -53,7 +54,7 @@ a {
   border-radius: 50px;
   background: linear-gradient(to right, #d76031 0%, #ecb340 100%);
   transform: scale(1) perspective(1px);
-  transition: 0.9s ease-in-out;
+  transition: 0.6s ease-in-out;
   font-family: "Lato", sans-serif;
 }
 
@@ -63,7 +64,7 @@ a {
   transition: 0.7s ease;
   border: 2px solid #d76031; */
   transform: scale(1.1) perspective(1px);
-  transition: 0.9s ease-in-out;
+  transition: 0.6s ease-in-out;
 }
 
 .nav-pills .nav-link {
@@ -137,12 +138,28 @@ a {
   padding-bottom: 30px;
 }
 
+#card-1,
+#card-2,
+#card-3,
+#card-4 {
+  transform: scale(1) perspective(1px);
+  transition: 0.6s ease-in-out;
+}
+
+#card-1:hover,
+#card-2:hover,
+#card-3:hover,
+#card-4:hover {
+  transform: scale(1.05) perspective(1px);
+  transition: 0.6s ease-in-out;
+}
+
 #systems span {
   color: #ecb340;
 }
 #certified {
   display: flex;
-  padding: 6em 0em;
+  padding: 4em 0em;
   background-image: url(images/certifiedTesla.jpeg);
   background-position: center;
   background-size: cover;
@@ -165,8 +182,23 @@ a {
   text-align: justify;
 }
 
+#property-1,
+#property-2,
+#property-3 {
+  padding-top: 1.5em;
+  transform: scale(1) perspective(1px);
+  transition: 0.6s ease-in-out;
+}
+
+#property-1:hover,
+#property-2:hover,
+#property-3:hover {
+  transform: scale(1.03) perspective(1px);
+  transition: 0.6s ease-in-out;
+}
+
 #certified-button {
-  margin-top: 15px;
+  margin-top: 50px;
   padding: 10px 85px;
   background-color: #f7ce4d;
   border: none;

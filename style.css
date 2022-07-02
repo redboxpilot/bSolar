@@ -311,3 +311,24 @@ a {
 #footer h4 {
   color: #8a8a8a;
 }
+
+@media (max-width: 392px) {
+  #v-pills-home,
+  #v-pills-payment,
+  #v-pills-profile,
+  #v-pills-bill,
+  #v-pills-messages,
+  #v-pills-settings,
+  #v-pills-impact {
+    padding-top: 2em;
+    padding-left: 0px;
+  }
+  #certified {
+    display: flex;
+    padding: 4em 1.5em;
+  }
+
+  #certified .row {
+    text-align: center;
+  }
+}

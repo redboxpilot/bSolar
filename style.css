@@ -2,6 +2,17 @@ html {
   scroll-behavior: smooth;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a {
+  font-family: "Lato", sans-serif;
+}
+
 #hero-background {
   width: 100%;
   /* position: absolute; */
@@ -24,6 +35,16 @@ html {
   --bs-offcanvas-color: white;
 }
 
+#navbar-logo {
+  transform: scale(1) perspective(1px);
+  transition: 0.9s ease-in-out;
+}
+
+#navbar-logo:hover {
+  transform: scale(1.1) perspective(1px);
+  transition: 0.9s ease-in-out;
+}
+
 .button {
   margin-top: 20px;
   padding: 10px 85px;
@@ -31,13 +52,18 @@ html {
   color: #fff;
   border-radius: 50px;
   background: linear-gradient(to right, #d76031 0%, #ecb340 100%);
+  transform: scale(1) perspective(1px);
+  transition: 0.9s ease-in-out;
+  font-family: "Lato", sans-serif;
 }
 
 .button:hover {
-  background: linear-gradient(to right, #fff 0%, #fff 0%);
+  /* background: linear-gradient(to right, #fff 0%, #fff 0%);
   color: #d76031;
   transition: 0.7s ease;
-  border: 2px solid #d76031;
+  border: 2px solid #d76031; */
+  transform: scale(1.1) perspective(1px);
+  transition: 0.9s ease-in-out;
 }
 
 .nav-pills .nav-link {
@@ -61,6 +87,7 @@ html {
   align-content: center;
   justify-content: center;
   align-items: center;
+  color: #8a8a8a;
 }
 
 #benefits h2 {
@@ -83,10 +110,12 @@ html {
 #v-pills-messages,
 #v-pills-settings,
 #v-pills-impact {
+  padding-top: 5em;
   text-align: justify;
   vertical-align: middle;
   align-items: center;
   padding-left: 60px;
+  color: #8a8a8a;
 }
 
 #systems {
@@ -96,6 +125,7 @@ html {
   background-color: #eee;
   height: min-content;
   padding: 3em 0em;
+  color: #8a8a8a;
 }
 
 #systems h2 {
@@ -144,6 +174,7 @@ html {
   font-size: 15px;
   font-weight: 700;
   color: white;
+  font-family: "Lato", sans-serif;
 }
 
 #certified-button:hover {
@@ -154,6 +185,7 @@ html {
 
 #faqs {
   padding: 70px 0px 70px 0px;
+  color: #8a8a8a;
 }
 #faqs-header {
   text-align: center;
@@ -163,6 +195,7 @@ html {
   padding: 0px 0px 10px 0px;
   font-size: 35px;
   color: #ecb340;
+  font-family: "Lato", sans-serif;
 }
 
 .accordion-button {
@@ -170,6 +203,11 @@ html {
   --bs-accordion-active-color: #ecb340;
   --bs-accordion-active-bg: #fff;
   --bs-accordion-btn-bg: #eeeeee;
+}
+
+.accordion-body {
+  color: #8a8a8a;
+  font-family: "Lato", sans-serif;
 }
 
 #contact-us {
@@ -212,6 +250,7 @@ html {
   font-size: 15px;
   font-weight: 700;
   color: white;
+  font-family: "Lato", sans-serif;
 }
 
 #contact-me:hover {
@@ -238,5 +277,5 @@ html {
 }
 
 #footer h4 {
-  color: rgb(96, 95, 95);
+  color: #8a8a8a;
 }

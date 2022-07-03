@@ -74,10 +74,19 @@ a {
   text-align: left;
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .show > .nav-link {
-  --bs-nav-pills-link-active-bg: #d76031;
-  color: white;
+#v-pills-home-tab.active,
+#v-pills-payment-tab.active,
+#v-pills-profile-tab.active,
+#v-pills-bill-tab.active,
+#v-pills-messages-tab.active,
+#v-pills-settings-tab.active,
+#v-pills-impact-tab.active {
+  background: linear-gradient(0.25turn, #d76031, #ecb340);
+}
+
+.tab-content h4 {
+  color: #ecb340;
+  font-weight: bold;
 }
 
 #benefits {
@@ -94,6 +103,7 @@ a {
 #benefits h2 {
   padding: 0px 0px 60px 0px;
   text-align: center;
+  font-weight: bold;
 }
 
 #benefits span {
@@ -132,6 +142,7 @@ a {
 #systems h2 {
   text-align: center;
   padding: 10px 0px 40px 0px;
+  font-weight: bold;
 }
 
 #cards {
@@ -154,6 +165,10 @@ a {
   transition: 0.6s ease-in-out;
 }
 
+.card-title {
+  font-weight: bold;
+}
+
 #systems span {
   color: #ecb340;
 }
@@ -174,6 +189,7 @@ a {
 
 #certified h2 {
   font-size: 45px;
+  font-weight: bold;
 }
 
 #certified .row {
@@ -228,6 +244,7 @@ a {
   font-size: 35px;
   color: #ecb340;
   font-family: "Lato", sans-serif;
+  font-weight: bold;
 }
 
 .accordion-button {
@@ -252,6 +269,7 @@ a {
   padding-bottom: 20px;
   font-size: 35px;
   color: white;
+  font-weight: bold;
 }
 
 #form-container {

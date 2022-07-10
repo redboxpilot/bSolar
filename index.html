@@ -96,6 +96,65 @@
       </div>
     </section>
 
+    <!-- Intro Images -->
+
+    <section id="intro-images">
+      <div class="container" id="description1">
+        <div class="row">
+          <div class="container-flex col-md-3">
+            <img src="images/description1.png" alt="" id="description1Image" />
+          </div>
+          <div class="container-flex col-md-6" id="descriptionText1">
+            <h3>The best panels and inverters</h3>
+            <h3 class="h3-gold">at the most competitive prices.</h3>
+            <p>
+              Our team has
+              <strong>over 10 years of experience</strong> installing solar
+              systems and we're on a mission to reduce your energy bills to
+              ZERO.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container" id="description2">
+        <div class="row">
+          <div class="container-flex col-md-6" id="descriptionText2">
+            <h3 class="h3-gold">A full service</h3>
+            <h3>renewable energy company.</h3>
+            <p>
+              We offer a reliable solar installation that includes a
+              <strong
+                >high-end solar power system with modern and customised
+                desiens.</strong
+              >
+              Our experienced solar energy team has performed thousands of solar
+              installations for residential and commercial nronerties arross
+              florida
+            </p>
+          </div>
+          <div class="container-flex col-md-3 col-sm-12">
+            <img src="images/description2.png" alt="" id="description2Image" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container-flex" id="description3">
+        <h1>Why choose us?</h1>
+        <p>
+          The unmatched growing popularity of solar energy has expanded the
+          business of hundreds of solar companies in US. <br />
+          B Solar is a proud Florida based solar company that delivers premium
+          quality solar solutions throughout Florida region. <br />
+          <span
+            >We give you all the reasons why you should choose B Solar as your
+            solar partners and solar installers in Florida.</span
+          >
+        </p>
+        <img src="images/description3.png" alt="" id="description3Image" />
+      </div>
+    </section>
+
     <!-- Benefits - NavList -->
 
     <section class="col-md-12" id="benefits">
@@ -737,60 +796,67 @@
       <div class="container" id="contact-us-header">
         <h2>Let's see if solar is for you!</h2>
       </div>
-      <div class="container col-md-10" id="form-container">
-        <h6>
-          Fill out our form and a team member will reach out to schedule your
-          free in-home or remote consultation.
-        </h6>
-        <div class="row">
-          <div class="form-floating mb-3 col-md-4">
-            <input
-              type="text"
-              class="form-control"
-              id="floatingName"
-              placeholder="Your name"
-            />
-            <label for="floatingName">&nbsp&nbspYour name</label>
+      <form action="mail.php" method="post">
+        <div class="container col-md-10" id="form-container">
+          <h6>
+            Fill out our form and a team member will reach out to schedule your
+            free in-home or remote consultation.
+          </h6>
+          <div class="row">
+            <div class="form-floating mb-3 col-md-4">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingName"
+                placeholder="Your name"
+                name="name"
+              />
+              <label for="floatingName">&nbsp&nbspYour name</label>
+            </div>
+            <div class="form-floating mb-3 col-md-4">
+              <input
+                type="tel"
+                class="form-control"
+                id="floatingTel"
+                placeholder="Phone number"
+                name="phone"
+              />
+              <label for="floatingTel">&nbsp&nbspPhone number</label>
+            </div>
+            <div class="form-floating mb-3 col-md-4">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="Email"
+                name="email"
+              />
+              <label for="floatingInput">&nbsp&nbspEmail address</label>
+            </div>
+            <div class="form-floating mb-3 col-md-6">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingZIP"
+                placeholder="ZIP"
+                name="zip"
+              />
+              <label for="floatingZIP">&nbsp&nbspProperty address/ZIP</label>
+            </div>
+            <div class="form-floating mb-3 col-md-6">
+              <input
+                type="number"
+                class="form-control"
+                id="floatingBill"
+                placeholder="Average Bill"
+                name="bill"
+              />
+              <label for="floatingBill">&nbsp&nbspAverage Electric Bill</label>
+            </div>
           </div>
-          <div class="form-floating mb-3 col-md-4">
-            <input
-              type="tel"
-              class="form-control"
-              id="floatingTel"
-              placeholder="Phone number"
-            />
-            <label for="floatingTel">&nbsp&nbspPhone number</label>
-          </div>
-          <div class="form-floating mb-3 col-md-4">
-            <input
-              type="email"
-              class="form-control"
-              id="floatingInput"
-              placeholder="Email"
-            />
-            <label for="floatingInput">&nbsp&nbspEmail address</label>
-          </div>
-          <div class="form-floating mb-3 col-md-6">
-            <input
-              type="email"
-              class="form-control"
-              id="floatingZIP"
-              placeholder="Email"
-            />
-            <label for="floatingZIP">&nbsp&nbspProperty address/ZIP</label>
-          </div>
-          <div class="form-floating mb-3 col-md-6">
-            <input
-              type="email"
-              class="form-control"
-              id="floatingBill"
-              placeholder="Email"
-            />
-            <label for="floatingBill">&nbsp&nbspAverage Electric Bill</label>
-          </div>
+          <button type="submit" id="contact-me">CONTACT ME</button>
         </div>
-        <button type="submit" id="contact-me">CONTACT ME</button>
-      </div>
+      </form>
     </section>
 
     <section id="footer">
